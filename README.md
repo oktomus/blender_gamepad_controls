@@ -8,6 +8,8 @@ To edit and run the addon, I'm using the [Blender Development addon](https://mar
 
 Simply open the project in Visual Studio Code then do `CTRL + SHIFT + P` > `Blender: Run`.
 
+The most important script of this addon is `gamepads/xbox_gamepad.py`.
+
 # Usage
 
 Once you loaded the addon, there is 2 operators available. Press `F3` and type `xbox` to see them.

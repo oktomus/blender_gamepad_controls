@@ -7,24 +7,22 @@ from functools import partial
 
 from datetime import datetime
 
-from . inputs import devices
-from . inputs import get_gamepad
-from . inputs_utils import is_gamepad_plugged
-
-from . gamepad_input import XboxController
-
-from . dev_mode import is_dev_mode
-
-from . utils.draw import draw_text, draw_text_left_alignement, ORANGE, WHITE, RED
-
 from . diagnostict import XBOXDiagnostic
 
-from . viewport_utils import toggle_viewport_camera_viewpoint
-from . camera_utils import get_selected_camera
+from ..thirdparties.inputs import devices
+from ..thirdparties.inputs import devices
+from ..utils.inputs import is_gamepad_plugged
+
+from ..gamepad.xbox_gamepad import XboxController
+
+from ..dev_mode import is_dev_mode
+
+from ..utils.draw import draw_text, draw_text_left_alignement, ORANGE, WHITE, RED
+from ..utils.viewport import toggle_viewport_camera_viewpoint
+from ..utils.camera import get_selected_camera
+from ..utils.math import clamp
 
 from mathutils import Vector, Matrix
-
-from . math_utils import clamp
 
 class ControlCamera(bpy.types.Operator):
     """Control camera with a gamepad controller"""      

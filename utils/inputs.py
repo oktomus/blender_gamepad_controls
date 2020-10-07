@@ -1,7 +1,7 @@
 """Utils functions for Inputs.
 """
 
-from . inputs import devices
+from ..thirdparties.inputs import devices
 
 def reset_device_manager():
     """Reset to get the actual list of plugged-in devices."""

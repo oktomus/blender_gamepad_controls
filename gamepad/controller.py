@@ -1,4 +1,4 @@
-from . gamepad_input import XboxController
+from . xbox_gamepad import XboxController
 
 controller = None
 

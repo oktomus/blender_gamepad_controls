@@ -6,10 +6,10 @@ import array
 
 from typing import NamedTuple
 
-from . inputs import get_gamepad, devices, UnpluggedError
-from . dev_mode import is_dev_mode
+from ..thirdparties.inputs import get_gamepad, devices, UnpluggedError
+from ..dev_mode import is_dev_mode
+from ..utils.math import map_float
 
-from . math_utils import map_float
 import math
 import threading
 
@@ -332,6 +332,7 @@ class XboxController(object):
             self.arrows.update_down_state(event.state)
 
 # Debug purpose
+# Run this script from the terminal.
 if __name__ == "__main__":
     while True:
         events = get_gamepad()

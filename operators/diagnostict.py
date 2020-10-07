@@ -9,18 +9,15 @@ import bgl
 from threading import Thread, Event
 from functools import partial
 
-from . inputs import devices
-from . inputs import get_gamepad
-
-from . inputs_utils import is_gamepad_plugged
-
-from . gamepad_input import XboxController
-
-from time import sleep
+from ..thirdparties.inputs import devices
+from ..thirdparties.inputs import get_gamepad
+from ..utils.inputs import is_gamepad_plugged
+from ..gamepad.xbox_gamepad import XboxController
+from ..utils.draw import draw_text, draw_text_left_alignement, ORANGE, WHITE, RED, GREEN
 
 from mathutils import Vector
 
-from . utils.draw import draw_text, draw_text_left_alignement, ORANGE, WHITE, RED, GREEN
+from time import sleep
 
 class XBOXDiagnostic(bpy.types.Operator):
     """My Object Moving Script"""      # Use this as a tooltip for menu items and buttons.
