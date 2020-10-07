@@ -1,5 +1,7 @@
 This is addon is a **work in progress** and can't be used as-is in Blender for produciton use.
 
+![demo](https://blenderartists.org/uploads/default/original/4X/e/a/9/ea9dd3b634f92a891d6afd0f069e71de93830a68.gif)
+
 # Development
 
 To edit and run the addon, I'm using the [Blender Development addon](https://marketplace.visualstudio.com/items?itemName=JacquesLucke.blender-development) developped by Jacques Lucke.
